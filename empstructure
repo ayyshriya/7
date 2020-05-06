@@ -1,0 +1,38 @@
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char    name[30];
+    int     empId;
+    char    dept[30];
+    float   salary;
+};
+ 
+int main()
+{
+	for(int i=1;i<=20;i++)
+	{
+	
+    /*declare structure variable*/
+    struct employee emp;
+     
+    /*read employee details*/
+    printf("\nEnter details :");
+    printf("\nName ?:");          
+	scanf("%s",&emp.name);
+    printf("\nID ?:");            
+	scanf("%d",&emp.empId);
+    printf("\nDept?:");           
+	scanf("%s",&emp.dept);
+    printf("\nSalary ?:");        
+	scanf("%f",&emp.salary);
+     
+    /*print employee details*/
+    printf("\nEntered detail is:");
+    printf("\nName: %s"   ,emp.name);
+    printf("\nId: %d"     ,emp.empId);
+    printf("\nDept: %s",emp.dept);
+    printf("\nSalary: %f\n",emp.salary);
+}
+    return 0;
+}
